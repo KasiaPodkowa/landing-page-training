@@ -1,0 +1,36 @@
+.text {
+    // position: absolute;
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: normal;
+    color: $color;
+}
+
+.section {
+    position: absolute;
+    width: 295px;
+    height: 548px;
+    left: 42px;
+    top: 144px;
+
+    background: #FFFFFF;
+
+    &__logo {
+        position: absolute;
+        left: 66px;
+        top: 58px;
+        width: 32.47px;
+        height: 39.93px;
+    }
+
+    &__h1 {
+        position: absolute;
+
+        font-size: 18px;
+        line-height: 22px;
+        width: 142.24px;
+        height: 28.18px;
+        left: 100px;
+        top: 65px;
+    }
+}
