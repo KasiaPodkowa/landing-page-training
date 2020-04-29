@@ -14,7 +14,6 @@ body {
 
 .text {
   font-family: "Righteous", cursive;
-  text-align: center;
 }
 
 .wrapper {
@@ -43,5 +42,35 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.main .logo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  line-height: 40px;
+  margin-top: 60px;
+}
+
+.main .logo__img {
+  position: relative;
+  -webkit-transform: translateX(calc(-100% - 32px));
+          transform: translateX(calc(-100% - 32px));
+  width: 40px;
+  height: 40px;
+}
+
+.main .logo__name {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 17px;
 }
 /*# sourceMappingURL=style.css.map */

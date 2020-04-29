@@ -4,4 +4,28 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-between;
+
+    .logo {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        line-height: 40px;
+        margin-top: 60px;
+
+        &__img {
+            position: relative;
+            transform: translateX(calc(-100% - 32px));
+            width: 40px;
+            height: 40px;
+        }
+
+        &__name {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 17px;
+        }
+    }
+
 }
