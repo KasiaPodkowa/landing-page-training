@@ -1,72 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page training</title>
-    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap&subset=latin-ext" rel="stylesheet">
-    <link rel="icon" href="svg/Logo.svg">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Righteous&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="svg/Logo.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
+      <main class="main">
+        <div class="logo main__logo">
+          <img src="svg/Logo.svg" alt="Logo" class="logo__img" />
+          <span class="text logo__name">GreenHarvest</span>
+        </div>
 
-        <main class="main">
+        <h1 class="text main__h1">Weolcome back</h1>
 
-            <div class="logo main__logo">
-                <img src="svg/Logo.svg" alt="Logo" class="logo__img">
-                <span class=" text logo__name">GreenHarvest</span>
-            </div>
+        <button class="button button--google text">Log in with Google</button>
 
-            <h1 class="text main__h1">Weolcome back</h1>
+        <div class="alternative main__alternative">
+          <div class="vector alternative__vector"></div>
+          <p class="text alternative__text text--small">Or login with email</p>
+          <div class="vector alternative__vector"></div>
+        </div>
 
-            <button class="button button--google text">Log in with Google</button>
+        <div class="login main__login">
+          <div class="email login__email">
+            <p class="text email--p">Email</p>
+            <input type="text" class="input email__input" />
+          </div>
+          <div class="password login__password">
+            <p class="text password--p">Password</p>
+            <input type="password" class="input password__input" />
+          </div>
+        </div>
 
-            <div class="alternative main__alternative">
-                <div class="vector alternative__vector"></div>
-                <p class="text alternative__text">Or login with email</p>
-                <div class="vector alternative__vector"></div>
-            </div>
+        <div class="inf">
+          <div class="inf__stay-logged">
+            <input class="checkbox" type="checkbox" />
+            <p class="text text--small">Keep me logged in</p>
+          </div>
+          <a href="#" class="text text--red">Forgot your password?</a>
+        </div>
 
-            <div class="login main__login">
-                <div class="email login__email">
-                    <p class="text email--p">Email</p>
-                    <input type="text" class="input email__input">
-                </div>
-                <div class="password login__password">
-                    <p class="text password--p">Password</p>
-                    <input type="text" class="input password__input">
-                </div>
-            </div>
+        <button class="button button--login text">Log in</button>
+        <div class="vector vector--bottom"></div>
 
-            <div class="inf">
-                <div class="inf__stay-logged">
-                    <input class="checkbox" type="checkbox">
-                    <p class="text">Keep me logged in</p>
-                </div>
-                <a href="#" class="text text--red">Forgot your password?</a>
-            </div>
+        <p class="text text--small main__account">
+          Don't have an accoutn? <a href="#" class="text text--red">Sign up</a>
+        </p>
 
-            <button class="button button--login text">Log in</button>
-            <div class="vector vector--bottom"></div>
-
-            <p class="text main__account">Don't have an accoutn? <a href="#" class="text text--red">Sign up</a></p>
-
-            <!-- <div class="login-inf main__login-inf">
+        <!-- <div class="login-inf main__login-inf">
                 <div class="stay-logged">
                     <input type="checkbox">
                     <p class="text">Keep me logged in</p>
                 </div>
                 <a href="#" class="text text--red">Forgot your password?</a>
             </div> -->
-        </main>
+      </main>
 
-        <section class="section">
-        </section>
-
+      <section class="section"></section>
     </div>
-</body>
-
+  </body>
 </html>
