@@ -385,5 +385,11 @@ body {
     -webkit-transition: .2s;
     transition: .2s;
   }
+  .main__login .email--p:hover,
+  .main__login .password--p:hover {
+    left: 0;
+    bottom: 36px;
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
