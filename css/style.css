@@ -133,7 +133,13 @@ body {
   border-radius: 5px;
   width: 100%;
   line-height: 28px;
-  padding-left: 5px;
+  padding-left: 10px;
+}
+
+@media (orientation: landscape) {
+  .input {
+    line-height: 35px;
+  }
 }
 
 .inf {
@@ -318,6 +324,67 @@ body {
 .main__account {
   text-align: center;
   color: #999;
+}
+
+.main__login .email,
+.main__login .password {
+  position: relative;
+  height: 47px;
+}
+
+.main__login .email--input,
+.main__login .password--input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+.main__login .email--p,
+.main__login .password--p {
+  position: absolute;
+  left: 0;
+  bottom: 29px;
+}
+
+@media (orientation: landscape) {
+
+  .main__login .email,
+  .main__login .password {
+    height: 53px;
+  }
+
+  .main__login .email--input:hover+.email--p,
+  .main__login .email--input:hover+.password--p,
+  .main__login .password--input:hover+.email--p,
+  .main__login .password--input:hover+.password--p {
+    left: 0;
+    bottom: 36px;
+    font-size: 14px;
+  }
+
+  .main__login .email--input:focus~.email--p,
+  .main__login .email--input:not(:focus):valid~.email--p,
+  .main__login .email--input:focus~.password--p,
+  .main__login .email--input:not(:focus):valid~.password--p,
+  .main__login .password--input:focus~.email--p,
+  .main__login .password--input:not(:focus):valid~.email--p,
+  .main__login .password--input:focus~.password--p,
+  .main__login .password--input:not(:focus):valid~.password--p {
+    bottom: 36px;
+    left: 0;
+    font-size: 14px;
+    opacity: 1;
+  }
+
+  .main__login .email--p,
+  .main__login .password--p {
+    left: 10px;
+    bottom: 9.5px;
+    cursor: text;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

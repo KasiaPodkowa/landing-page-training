@@ -102,4 +102,68 @@
 
     }
 
+    &__login {
+
+        & .email,
+        & .password {
+            position: relative;
+            height: 47px;
+
+            &--input {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: transparent;
+            }
+
+            &--p {
+                position: absolute;
+                // z-index: 1;
+                left: 0;
+                bottom: 29px;
+            }
+        }
+    }
+
+    @media (orientation: landscape) {
+        &__login {
+
+            & .email,
+            & .password {
+                height: 53px;
+
+                &--input {
+
+                    &:hover+.email--p,
+                    &:hover+.password--p {
+                        left: 0;
+                        bottom: 36px;
+                        font-size: 14px;
+                    }
+
+                    &:focus~.email--p,
+                    &:not(:focus):valid~.email--p,
+                    &:focus~.password--p,
+                    &:not(:focus):valid~.password--p {
+                        bottom: 36px;
+                        left: 0;
+                        font-size: 14px;
+                        opacity: 1;
+                    }
+                }
+
+                &--p {
+                    left: 10px;
+                    bottom: 9.5px;
+                    cursor: text;
+                    transition: .2s;
+                }
+
+
+            }
+
+
+        }
+    }
+
 }
