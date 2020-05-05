@@ -25,6 +25,12 @@ body {
         }
     }
 
+    @media (orientation: landscape) {
+        & {
+            font-size: 16px;
+        }
+    }
+
     &--red {
         text-decoration: none;
         font-size: 8px;
@@ -36,6 +42,12 @@ body {
                 font-size: 16px;
             }
         }
+
+        @media (orientation: landscape) {
+            & {
+                font-size: 12px;
+            }
+        }
     }
 
     &--small {
@@ -44,6 +56,12 @@ body {
         @media (min-width: 768px) {
             & {
                 font-size: 16px;
+            }
+        }
+
+        @media (orientation: landscape) {
+            & {
+                font-size: 12px;
             }
         }
     }
@@ -60,6 +78,12 @@ body {
     @media (min-width: 768px) {
         & {
             line-height: 40px;
+        }
+    }
+
+    @media (orientation: landscape) {
+        & {
+            line-height: 35px;
         }
     }
 
@@ -84,14 +108,12 @@ body {
 
     &__vector {
         border: 1px solid #E1E1E1;
-        // width: calc((100% - 90px)/2);
         width: 25%;
     }
 
     &__text {
         text-transform: uppercase;
         line-height: 10px;
-        // width: 90px;
         text-align: center;
         color: #999999;
         flex-grow: 1;
@@ -119,9 +141,6 @@ body {
         align-items: center;
 
         & .checkbox {
-            // border: 1px solid #E1E1E1;
-            // box-sizing: border-box;
-            // border-radius: 4px;
             cursor: pointer;
         }
 
