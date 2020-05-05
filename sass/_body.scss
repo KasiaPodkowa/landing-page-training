@@ -146,6 +146,10 @@ body {
 
         & .checkbox {
             cursor: pointer;
+
+            &__text {
+                cursor: pointer;
+            }
         }
 
         & .text {
